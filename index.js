@@ -25,12 +25,9 @@ const errorElement = document.querySelector('.reg-form__error')
 button.addEventListener('click', (event) =>{
 	event.preventDefault()
 	const userName= user.value.trim()
-	if (users.includes(userName)) { // kontrola, zda je jméno v poli users
+	if (users.includes(userName)) { 
 		errorElement.textContent = 'Toto uživatelské jméno je již zabráno.';
 	  }
-	  //else {
-		// pokračovat s registrací uživatele
-	  //}
 	
 })
 //Zkontrolujte, že heslo zadané do prvního políčka je dostatečně bezpečené. 
